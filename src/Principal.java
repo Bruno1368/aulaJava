@@ -5,6 +5,9 @@ import br.com.alura.screenmatch.modelos.Titulo;
 public class Principal {
     public static void main(String[] args) {
 
+        // classe mãe = generalização - OU - super classe
+        // classes filhas = especializações - sub classe
+
         Filme filme1 = new Filme();
         filme1.setAnoDeLancamento(1978);
         filme1.setNome("Revolução dos bichos");
@@ -17,9 +20,11 @@ public class Principal {
 
         breakingBad.setNome("Breaking bad");
         breakingBad.setAnoDeLancamento(2008);
-        breakingBad.setTemporadas(5);
+        breakingBad.setTemporadas(10);
+        breakingBad.setEpisodiosPorTemporada(10);
+        breakingBad.setMinutosPorEpisodio(50);
         breakingBad.exibeFichaTecnica();
-        System.out.println("Duração do filme: " + breakingBad.getDuracaoMinutos());
+        System.out.println("Duração do seriado em minutos: " + breakingBad.getDuracaoMinutos());
 
 
         // chamada do método

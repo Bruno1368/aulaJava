@@ -37,4 +37,11 @@ public class Serie extends Titulo{
     public void setMinutosPorEpisodio(int minutosPorEpisodio) {
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
+
+
+    //*override* sobreescrever metodo já existente do modelo mãe/parent titulo do qual eu extendo
+    @Override
+    public int getDuracaoMinutos() {
+        return temporadas * episodiosPorTemporada * minutosPorEpisodio;
+    }
 }
