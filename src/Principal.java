@@ -13,8 +13,7 @@ public class Principal {
         filme1.avalia(7.5);
         filme1.avalia(8);
         filme1.avalia(5.6);
-        System.out.println("Soma das avaliações: " + filme1.somaDasAvaliacoes);
-        System.out.println("Número de avaliações: " + filme1.totalDeAvaliacoes);
+        System.out.println("Total de avaliações: " + filme1.getTotalDeAvaliacoes());
         System.out.println("Média das avaliações: " + filme1.pegaMedia());
 
     }
