@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
@@ -8,11 +9,19 @@ public class Principal {
         // classe mãe = generalização - OU - super classe
         // classes filhas = especializações - sub classe
 
-        Filme filme1 = new Filme();
-        filme1.setAnoDeLancamento(1978);
-        filme1.setNome("Revolução dos bichos");
-        filme1.setDuracaoMinutos(105);
-        filme1.setIncluidoNoPlano(true);
+        Filme silencioDosInocentes = new Filme();
+        silencioDosInocentes.setAnoDeLancamento(1978);
+        silencioDosInocentes.setNome("Revolução dos bichos");
+        silencioDosInocentes.setDuracaoMinutos(105);
+        silencioDosInocentes.setIncluidoNoPlano(true);
+
+        Filme belezaAmericana = new Filme();
+        belezaAmericana.setAnoDeLancamento(1996);
+        belezaAmericana.setNome("Beleza Americana");
+        belezaAmericana.setDuracaoMinutos(90);
+        belezaAmericana.setIncluidoNoPlano(true);
+
+
 
 
 
@@ -24,20 +33,28 @@ public class Principal {
         breakingBad.setEpisodiosPorTemporada(10);
         breakingBad.setMinutosPorEpisodio(50);
         breakingBad.exibeFichaTecnica();
-        System.out.println("Duração do seriado em minutos: " + breakingBad.getDuracaoMinutos());
+        //System.out.println("Duração do seriado em minutos: " + breakingBad.getDuracaoMinutos());
 
 
         // chamada do método
-        //filme1.exibeFichaTecnica();
-        filme1.avalia(7.5);
-        filme1.avalia(8);
-        filme1.avalia(5.6);
-        //System.out.println("Total de avaliações: " + filme1.getTotalDeAvaliacoes());
-        //System.out.println("Média das avaliações: " + filme1.pegaMedia());
-        //System.out.println("Nome do filme: " + filme1.getNome());
-        //System.out.println("Ano de lançamento: " + filme1.getAnoDeLancamento());
-        //System.out.println("Duração do filme: " + filme1.getDuracaoMinutos());
-        //System.out.println("O filme está incluido no plano: " + filme1.isIncluidoNoPlano());
+        //silencioDosInocentes.exibeFichaTecnica();
+        silencioDosInocentes.avalia(7.5);
+        silencioDosInocentes.avalia(8);
+        silencioDosInocentes.avalia(5.6);
+        //System.out.println("Total de avaliações: " + silencioDosInocentes.getTotalDeAvaliacoes());
+        //System.out.println("Média das avaliações: " + silencioDosInocentes.pegaMedia());
+        //System.out.println("Nome do filme: " + silencioDosInocentes.getNome());
+        //System.out.println("Ano de lançamento: " + silencioDosInocentes.getAnoDeLancamento());
+        //System.out.println("Duração do filme: " + silencioDosInocentes.getDuracaoMinutos());
+        //System.out.println("O filme está incluido no plano: " + silencioDosInocentes.isIncluidoNoPlano());
+
+        CalculadoraDeTempo calculadora  = new CalculadoraDeTempo();
+
+       calculadora.inclui(silencioDosInocentes);
+        calculadora.inclui(belezaAmericana);
+        calculadora.inclui(breakingBad);
+        System.out.println("Tempo dos filmes: " + calculadora.getTempoTotal());
+
 
     }
 }
