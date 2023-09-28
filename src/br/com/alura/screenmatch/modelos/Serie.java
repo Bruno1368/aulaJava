@@ -1,6 +1,8 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Serie extends Titulo{
+import br.com.alura.screenmatch.calculos.Classificavel;
+
+public class Serie extends Titulo {
     private int temporadas;
     private int episodiosPorTemporada;
     private boolean ativa;
@@ -52,4 +54,6 @@ public class Serie extends Titulo{
         System.out.println("Temporadas: " + temporadas);
         System.out.println("Episódio por temporada: " + episodiosPorTemporada);
     }
+
+
 }

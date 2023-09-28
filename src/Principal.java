@@ -1,4 +1,6 @@
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculos.FiltroDeRecomendacao;
+import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
@@ -38,9 +40,9 @@ public class Principal {
 
         // chamada do método
         //silencioDosInocentes.exibeFichaTecnica();
-        silencioDosInocentes.avalia(7.5);
-        silencioDosInocentes.avalia(8);
-        silencioDosInocentes.avalia(5.6);
+        silencioDosInocentes.avalia(1);
+        silencioDosInocentes.avalia(1);
+        silencioDosInocentes.avalia(0);
         //System.out.println("Total de avaliações: " + silencioDosInocentes.getTotalDeAvaliacoes());
         //System.out.println("Média das avaliações: " + silencioDosInocentes.pegaMedia());
         //System.out.println("Nome do filme: " + silencioDosInocentes.getNome());
@@ -50,10 +52,20 @@ public class Principal {
 
         CalculadoraDeTempo calculadora  = new CalculadoraDeTempo();
 
-       calculadora.inclui(silencioDosInocentes);
+        calculadora.inclui(silencioDosInocentes);
         calculadora.inclui(belezaAmericana);
         calculadora.inclui(breakingBad);
-        System.out.println("Tempo dos filmes: " + calculadora.getTempoTotal());
+        System.out.println("Tempo : " + calculadora.getTempoTotal());
+
+        FiltroDeRecomendacao filtro = new FiltroDeRecomendacao();
+
+        Episodio episodio = new Episodio();
+
+        episodio.setSerie(breakingBad);
+        episodio.setNumero(10);
+        episodio.setTotalVisualizacoes(500);
+
+        filtro.filtra(episodio);
 
 
     }

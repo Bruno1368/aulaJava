@@ -1,7 +1,10 @@
 package br.com.alura.screenmatch.modelos;
-        //palavra chave extends, pq filme extende as propriedade de titulo, tendo como propriedade propria apenas diretor
-        // todo filme é um titulo e tem filme tem um diretor
-public class Filme extends Titulo {
+
+import br.com.alura.screenmatch.calculos.Classificavel;
+
+//palavra chave extends, pq filme extende as propriedade de titulo, tendo como propriedade propria apenas diretor
+        // todo filme é um titulo e tem filme tem um diretor // implements
+public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
     public String getDiretor() {
@@ -10,6 +13,12 @@ public class Filme extends Titulo {
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    //casting
+    public int getClassificacao() {
+        return (int)pegaMedia() / 2;
     }
 }
 
