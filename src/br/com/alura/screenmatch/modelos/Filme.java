@@ -3,7 +3,8 @@ package br.com.alura.screenmatch.modelos;
 import br.com.alura.screenmatch.calculos.Classificavel;
 
 //palavra chave extends, pq filme extende as propriedade de titulo, tendo como propriedade propria apenas diretor
-        // todo filme é um titulo e tem filme tem um diretor // implements
+        // todo filme é um titulo e tem filme tem um diretor
+                                            //invocando a interface com implements
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
@@ -20,6 +21,10 @@ public class Filme extends Titulo implements Classificavel {
     public int getClassificacao() {
         return (int)pegaMedia() / 2;
     }
+
+
+
+
 }
 
 

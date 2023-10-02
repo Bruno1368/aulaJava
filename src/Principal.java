@@ -5,6 +5,8 @@ import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -13,7 +15,7 @@ public class Principal {
 
         Filme silencioDosInocentes = new Filme();
         silencioDosInocentes.setAnoDeLancamento(1978);
-        silencioDosInocentes.setNome("Revolução dos bichos");
+        silencioDosInocentes.setNome("Silêncio dos Inocentes");
         silencioDosInocentes.setDuracaoMinutos(105);
         silencioDosInocentes.setIncluidoNoPlano(true);
 
@@ -60,12 +62,37 @@ public class Principal {
         FiltroDeRecomendacao filtro = new FiltroDeRecomendacao();
 
         Episodio episodio = new Episodio();
-
+                    //serie do tipo Serie, breakingbad já foi instanciado aqui
         episodio.setSerie(breakingBad);
         episodio.setNumero(10);
         episodio.setTotalVisualizacoes(500);
 
         filtro.filtra(episodio);
+
+        Filme brunoFilme = new Filme();
+        brunoFilme.setNome("O poderoso chefão");
+        brunoFilme.setAnoDeLancamento(1972);
+        brunoFilme.avalia(9);
+
+
+        //pode ser criado como var, inferência
+        var filmeDoVal = new Filme();
+
+        //como declarar uma arraylist
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+
+        listaDeFilmes.add(brunoFilme);
+        listaDeFilmes.add(belezaAmericana);
+        listaDeFilmes.add(silencioDosInocentes);
+
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("O primeiro filme da lista é: " + listaDeFilmes.get(0).getNome());
+        System.out.println("Lista de filmes: " + listaDeFilmes);
+        System.out.println("toString do filme: " + listaDeFilmes.get(0).toString());
+
+
+
+
 
 
     }
