@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroDeRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
@@ -13,13 +15,11 @@ public class Principal {
         // classe mãe = generalização - OU - super classe
         // classes filhas = especializações - sub classe
 
-        Filme silencioDosInocentes = new Filme("Silencio incoentes");
-        silencioDosInocentes.setAnoDeLancamento(1978);
+        Filme silencioDosInocentes = new Filme("Silencio incoentes", 1978);
         silencioDosInocentes.setDuracaoMinutos(105);
         silencioDosInocentes.setIncluidoNoPlano(true);
 
-        Filme belezaAmericana = new Filme("Beleza Americana");
-        belezaAmericana.setAnoDeLancamento(1996);
+        Filme belezaAmericana = new Filme("Beleza Americana", 1996);
         belezaAmericana.setDuracaoMinutos(90);
         belezaAmericana.setIncluidoNoPlano(true);
 
@@ -27,10 +27,10 @@ public class Principal {
 
 
 
-        Serie breakingBad = new Serie();
+        Serie breakingBad = new Serie("Breaking bad", 2008);
 
-        breakingBad.setNome("Breaking bad");
-        breakingBad.setAnoDeLancamento(2008);
+        //breakingBad.setNome("Breaking bad");
+        //breakingBad.setAnoDeLancamento(2008);
         breakingBad.setTemporadas(10);
         breakingBad.setEpisodiosPorTemporada(10);
         breakingBad.setMinutosPorEpisodio(50);
@@ -67,13 +67,13 @@ public class Principal {
 
         filtro.filtra(episodio);
 
-        Filme brunoFilme = new Filme("O poderoso chefão");
-        brunoFilme.setAnoDeLancamento(1972);
+        Filme brunoFilme = new Filme("O poderoso chefão", 1972);
+
         brunoFilme.avalia(9);
 
 
         //pode ser criado como var, inferência
-        var filmeDoVal = new Filme("As branquelas");
+        var filmeDoVal = new Filme("As branquelas", 2008);
 
         //como declarar uma arraylist
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();

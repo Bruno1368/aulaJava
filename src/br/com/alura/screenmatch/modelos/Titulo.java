@@ -10,6 +10,11 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoMinutos;
 
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     //usado o get para acessar informações de um dado encapsulado, privado, pegar direto pelo método, não pelo atributo, pelo "coração"
     public int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;

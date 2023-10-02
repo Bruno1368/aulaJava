@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="631357b5-4dfb-43ba-b89d-081261238fe2" name="Changes" comment="Mudando a classe tostring, reescrevendo">
+    <list default="true" id="631357b5-4dfb-43ba-b89d-081261238fe2" name="Changes" comment="utilizando o construtor para setar nome do filme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
 }</component>
   <component name="RunManager">
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Principal" />
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.Principal" />
       <module name="screenmatch" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696273429025</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="utilizando o construtor para setar nome do filme">
+      <created>1696274786601</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696274786601</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -142,6 +151,7 @@
     <MESSAGE value="Interface" />
     <MESSAGE value="Arraylist" />
     <MESSAGE value="Mudando a classe tostring, reescrevendo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudando a classe tostring, reescrevendo" />
+    <MESSAGE value="utilizando o construtor para setar nome do filme" />
+    <option name="LAST_COMMIT_MESSAGE" value="utilizando o construtor para setar nome do filme" />
   </component>
 </project>
