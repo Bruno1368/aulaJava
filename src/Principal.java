@@ -13,15 +13,13 @@ public class Principal {
         // classe mãe = generalização - OU - super classe
         // classes filhas = especializações - sub classe
 
-        Filme silencioDosInocentes = new Filme();
+        Filme silencioDosInocentes = new Filme("Silencio incoentes");
         silencioDosInocentes.setAnoDeLancamento(1978);
-        silencioDosInocentes.setNome("Silêncio dos Inocentes");
         silencioDosInocentes.setDuracaoMinutos(105);
         silencioDosInocentes.setIncluidoNoPlano(true);
 
-        Filme belezaAmericana = new Filme();
+        Filme belezaAmericana = new Filme("Beleza Americana");
         belezaAmericana.setAnoDeLancamento(1996);
-        belezaAmericana.setNome("Beleza Americana");
         belezaAmericana.setDuracaoMinutos(90);
         belezaAmericana.setIncluidoNoPlano(true);
 
@@ -69,14 +67,13 @@ public class Principal {
 
         filtro.filtra(episodio);
 
-        Filme brunoFilme = new Filme();
-        brunoFilme.setNome("O poderoso chefão");
+        Filme brunoFilme = new Filme("O poderoso chefão");
         brunoFilme.setAnoDeLancamento(1972);
         brunoFilme.avalia(9);
 
 
         //pode ser criado como var, inferência
-        var filmeDoVal = new Filme();
+        var filmeDoVal = new Filme("As branquelas");
 
         //como declarar uma arraylist
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
@@ -89,11 +86,6 @@ public class Principal {
         System.out.println("O primeiro filme da lista é: " + listaDeFilmes.get(0).getNome());
         System.out.println("Lista de filmes: " + listaDeFilmes);
         System.out.println("toString do filme: " + listaDeFilmes.get(0).toString());
-
-
-
-
-
 
 
 
