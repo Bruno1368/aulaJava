@@ -60,5 +60,8 @@ public class Serie extends Titulo {
         System.out.println("Episódio por temporada: " + episodiosPorTemporada);
     }
 
-
+    @Override
+    public String toString() {
+        return "Série: " + this.getNome() + " (" + this.getAnoDeLancamento() + ")" ;
+    }
 }
