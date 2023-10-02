@@ -24,20 +24,15 @@ public class PrincipalComListas {
         lista.add(silencioDosInocentes);
         lista.add(breakingBad);
 
-        //laço for
-//        for (int i = 0; i < lista.size(); i++) {
-//            System.out.println(lista.get(i));
-//        }
-
-        //outra fora de percorrer com o foreach;
-        //lista.forEach(itens -> System.out.println(itens));
-        // laço forEach, para cada variável item que está dentro de lista, imprimir
-        for (Titulo item: lista) {
+        for (Titulo item : lista) {
             System.out.println(item.getNome());
-            //Casting item para filme, pq o objeto é um filme, ou seja: trate ele como um filme, por minha conta em risco
-            Filme filme = (Filme)item;
+            //chamando instanceof para ver se item é um filme *Não é muito usado, mas aparece, principalmente em código legado*
+            if (item instanceof Filme filme && filme.getClassificacao() > 2) {
                 System.out.println("Classificação do filme: " + filme.getClassificacao());
+            }
+
         }
 
     }
+
 }
