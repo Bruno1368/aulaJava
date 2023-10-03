@@ -8,6 +8,7 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Principal {
     public static void main(String[] args) {
@@ -86,6 +87,8 @@ public class Principal {
         System.out.println("O primeiro filme da lista é: " + listaDeFilmes.get(0).getNome());
         System.out.println("Lista de filmes: " + listaDeFilmes);
         System.out.println("toString do filme: " + listaDeFilmes.get(0).toString());
+
+
 
 
 

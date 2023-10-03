@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="631357b5-4dfb-43ba-b89d-081261238fe2" name="Changes" comment="iterador forEach e casting">
+    <list default="true" id="631357b5-4dfb-43ba-b89d-081261238fe2" name="Changes" comment="identificando o objeto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/PrincipalComListas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/PrincipalComListas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696280540646</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="identificando o objeto">
+      <created>1696281346174</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696281346174</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,6 +188,7 @@
     <MESSAGE value="utilizando o construtor para setar nome do filme" />
     <MESSAGE value="mais constructor" />
     <MESSAGE value="iterador forEach e casting" />
-    <option name="LAST_COMMIT_MESSAGE" value="iterador forEach e casting" />
+    <MESSAGE value="identificando o objeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="identificando o objeto" />
   </component>
 </project>
