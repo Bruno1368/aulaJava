@@ -68,7 +68,7 @@ public class Titulo implements Comparable<Titulo>  {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
-    @Override
+    @Override //metodo compareTo do comparable, precisa ser declarado e definido após implementar a interface comparable
     public int compareTo(Titulo outroTitulo) {
         //não preicsa reiventar a roda, se compareto já compara duas strings alfabeticamente, use ela
         return this.getNome().compareTo(outroTitulo.getNome());

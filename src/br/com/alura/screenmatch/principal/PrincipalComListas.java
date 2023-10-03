@@ -6,6 +6,7 @@ import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -43,8 +44,17 @@ public class PrincipalComListas {
         Collections.sort(buscaPorArtista);
         System.out.println("Busca por artista com collections: " + buscaPorArtista);
 
+
+
         Collections.sort(lista);
         System.out.println("Filmes em ordem alfabética:" + lista);
+        //fazendo comparação com comparator agora, pelo ano de lançamento//comparable você implementa para usar o seu metodo e definir o metodo universal de comparação enquanto comparator define outros metodos de comparação
+        // eu poderia usar por exmeplo lista.sort(Comparator.comparing(Titulo::getNome));
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Filme ordenado por ano ode lançamento: ");
+        System.out.println(lista);
+
+
 
     }
 
